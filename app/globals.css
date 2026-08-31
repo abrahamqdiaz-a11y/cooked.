@@ -8,7 +8,9 @@
  */
 :root {
   --harbor: #1e2a30;
-  --paper: #faf9f6;
+  --paper: #fff9ed;
+  --butter: #f2d89c;
+  --tomato: #a13d2d;
   --sea: #3e6b7a;
   --sea-deep: #345a67;
   --lingonberry: #9e463a;
@@ -74,6 +76,12 @@
 }
 
 @layer components {
+  .eyebrow {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
   /* Restaurant-menu dot leader between an item and its price. */
   .leader {
     flex: 1 1 auto;

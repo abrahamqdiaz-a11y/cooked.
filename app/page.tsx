@@ -3,15 +3,10 @@ import Hero from '@/components/sections/Hero';
 import WhyChefs from '@/components/sections/WhyChefs';
 import Route from '@/components/sections/Route';
 import Tastings from '@/components/sections/Tastings';
-import SmallGroups from '@/components/sections/SmallGroups';
-import DirectBooking from '@/components/sections/DirectBooking';
 import Pricing from '@/components/sections/Pricing';
-import Vendors from '@/components/sections/Vendors';
-import TakeHome from '@/components/sections/TakeHome';
 import PrivateTours from '@/components/sections/PrivateTours';
 import GiftCards from '@/components/sections/GiftCards';
 import FAQ from '@/components/sections/FAQ';
-import Reviews from '@/components/sections/Reviews';
 import Footer from '@/components/sections/Footer';
 
 export default function Page() {
@@ -27,17 +22,12 @@ export default function Page() {
       <main id="main">
         <Hero />
         <WhyChefs />
-        <Route />
         <Tastings />
-        <SmallGroups />
-        <DirectBooking />
+        <Route />
         <Pricing />
-        <Vendors />
-        <TakeHome />
         <PrivateTours />
         <GiftCards />
         <FAQ />
-        <Reviews />
       </main>
       <Footer />
     </>

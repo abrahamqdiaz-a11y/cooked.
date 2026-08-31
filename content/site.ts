@@ -29,9 +29,9 @@ export const site = {
 } as const;
 
 export const nav = [
-  { label: 'The route', href: '#route' },
   { label: 'Tastings', href: '#tastings' },
-  { label: 'Pricing', href: '#pricing' },
+  { label: 'The route', href: '#route' },
+  { label: 'Book', href: '#pricing' },
   { label: 'Private tours', href: '#private' },
   { label: 'FAQ', href: '#faq' },
 ] as const;
@@ -274,39 +274,6 @@ export const faq = {
     {
       q: 'Can I buy a gift card or book a private tour?',
       a: 'Both. Gift cards are valid for 12 months on any tour and any date, and are delivered by email immediately. Private tours run for up to 6 guests at €429 with your own chef and a route planned around your group. For corporate and team events larger than six, email us and we will build a custom market route.',
-    },
-  ],
-} as const;
-
-export const reviews = {
-  label: 'Reviews',
-  headline: 'What guests say.',
-  rating: { value: 4.9, count: 214 },
-  sources: 'Aggregated from Google and GetYourGuide',
-  cards: [
-    {
-      quote:
-        'Our guide had cooked in Helsinki kitchens for a decade and it showed — she walked us past two counters and said flat out that they were not good today. Three hours later we skipped dinner.',
-      author: 'Marta K.',
-      origin: 'Berlin',
-      source: 'Google',
-      date: 'January 2026',
-    },
-    {
-      quote:
-        'The leipäjuusto with cloudberry jam is the thing I keep telling people about. We went back to two of the stalls the next morning with the printed card.',
-      author: 'James R.',
-      origin: 'Edinburgh',
-      source: 'GetYourGuide',
-      date: 'December 2025',
-    },
-    {
-      quote:
-        'Eight of us, no microphone, no umbrella held in the air. It felt like a friend who happens to be a chef taking us shopping.',
-      author: 'Sofia L.',
-      origin: 'Milan',
-      source: 'Google',
-      date: 'November 2025',
     },
   ],
 } as const;

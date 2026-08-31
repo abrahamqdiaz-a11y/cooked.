@@ -1,43 +1,24 @@
-import AvailabilityNote from '../AvailabilityNote';
 import CTAButton from '../CTAButton';
-import MenuItem from '../MenuItem';
-import SectionLabel from '../SectionLabel';
 import { pricing } from '@/content/site';
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-paper py-20 sm:py-28">
-      <div className="mx-auto max-w-4xl px-5 sm:px-8">
-        <SectionLabel>{pricing.label}</SectionLabel>
-        <h2 className="mt-6 font-display text-3xl font-semibold leading-[1.1] tracking-tight sm:text-4xl">
-          {pricing.headline}
+    <section id="pricing" className="bg-harbor py-20 text-paper sm:py-28">
+      <div className="mx-auto max-w-5xl px-5 text-center sm:px-8">
+        <p className="eyebrow text-candle">The whole afternoon</p>
+        <h2 className="mt-5 font-display text-6xl font-black leading-none tracking-tight sm:text-8xl">
+          €85
         </h2>
-        <p className="mt-4 text-[0.6875rem] uppercase tracking-label text-smoke-deep sm:text-xs">
-          {pricing.spec}
+        <p className="mx-auto mt-5 max-w-2xl font-display text-2xl italic text-paper/90">
+          Ten tastings, three hours, one chef and a very full stomach.
         </p>
-
-        <ul className="mt-10 border-t border-harbor/15">
-          {pricing.rows.map((row) => (
-            <MenuItem
-              key={row.name}
-              name={row.name}
-              note={row.detail}
-              price={row.price}
-              badge={'badge' in row ? row.badge : undefined}
-              highlight={'highlight' in row ? row.highlight : false}
-            />
-          ))}
-        </ul>
-
-        <hr className="rule" />
-        <p className="mt-5 text-[0.875rem] leading-relaxed text-harbor/65">{pricing.note}</p>
-
-        <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-7">
-          <CTAButton className="w-full px-7 py-4 text-base sm:w-auto">
-            Book your tour — €85
-          </CTAButton>
-          <AvailabilityNote />
+        <p className="mt-5 text-sm uppercase tracking-[0.12em] text-paper/60">{pricing.spec}</p>
+        <div className="mx-auto mt-10 max-w-xl border-y border-paper/20 py-6">
+          <p className="text-sm text-paper/75">Children 6–12 €55 · Under 6 free · All tastings and VAT included</p>
+          <p className="mt-2 text-sm text-candle">{pricing.availability}</p>
         </div>
+        <CTAButton className="mt-10 w-full bg-candle px-9 py-5 text-base text-harbor hover:bg-paper sm:w-auto">Choose a date</CTAButton>
+        <p className="mt-5 text-xs text-paper/50">Tram fare (~€6) is paid on board.</p>
       </div>
     </section>
   );

@@ -1,13 +1,12 @@
-import SectionLabel from '../SectionLabel';
 import RouteMap from '../RouteMap';
 import { route } from '@/content/site';
 
 export default function Route() {
   return (
-    <section id="route" className="bg-mist py-20 sm:py-28">
+    <section id="route" className="bg-paper py-20 sm:py-32">
       <div className="mx-auto max-w-page px-5 sm:px-8">
-        <SectionLabel>{route.label}</SectionLabel>
-        <h2 className="mt-6 max-w-2xl font-display text-3xl font-semibold leading-[1.1] tracking-tight sm:text-4xl lg:text-[2.75rem]">
+        <p className="eyebrow">One hungry line across the city</p>
+        <h2 className="mt-6 max-w-4xl font-display text-4xl font-black uppercase leading-[0.9] tracking-[-0.035em] sm:text-6xl">
           {route.headline}
         </h2>
 
