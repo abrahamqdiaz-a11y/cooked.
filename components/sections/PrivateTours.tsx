@@ -8,7 +8,7 @@ export default function PrivateTours() {
   const mailto = `mailto:${site.corporateEmail}?subject=${encodeURIComponent(privateTours.subject)}`;
 
   return (
-    <section id="private" className="bg-paper py-20 sm:py-28">
+    <section id="private" className="bg-mist py-20 sm:py-28">
       <div className="mx-auto grid max-w-page gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
           <Image
@@ -39,7 +39,7 @@ export default function PrivateTours() {
             <CTAButton href={mailto} variant="ghost" className="px-6 py-3.5">
               {privateTours.cta}
             </CTAButton>
-            <span className="text-[0.8125rem] text-smoke">{site.corporateEmail}</span>
+            <span className="text-[0.8125rem] text-smoke-deep">{site.corporateEmail}</span>
           </div>
         </div>
       </div>

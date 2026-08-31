@@ -25,7 +25,7 @@ export default function LegalPage({
       <main className="bg-paper py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-5 sm:px-8">
           <h1 className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">{title}</h1>
-          <p className="mt-4 text-[0.6875rem] uppercase tracking-label text-smoke">
+          <p className="mt-4 text-[0.6875rem] uppercase tracking-label text-smoke-deep">
             Last updated {updated}
           </p>
           <hr className="rule my-10" />

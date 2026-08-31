@@ -4,7 +4,7 @@ import { takeHome } from '@/content/site';
 
 export default function TakeHome() {
   return (
-    <section className="border-t border-harbor/10 bg-white py-20 sm:py-28">
+    <section className="bg-paper py-20 sm:py-28">
       <div className="mx-auto grid max-w-page items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
         <div>
           <SectionLabel>{takeHome.label}</SectionLabel>
@@ -15,7 +15,7 @@ export default function TakeHome() {
             {takeHome.body}
           </p>
         </div>
-        <div className="bg-paper px-6 py-12 sm:px-10 sm:py-16">
+        <div className="bg-oatmeal px-6 py-12 sm:px-10 sm:py-16">
           <TastingCard />
         </div>
       </div>

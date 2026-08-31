@@ -13,21 +13,21 @@ export default function TastingCard() {
         <span className="block font-display text-2xl font-black uppercase leading-none tracking-tight">
           {site.wordmark.primary}
         </span>
-        <span className="mt-1 block text-[0.5rem] uppercase tracking-wordmark text-smoke">
+        <span className="mt-1 block text-[0.5rem] uppercase tracking-wordmark text-smoke-deep">
           {site.wordmark.secondary}
         </span>
       </div>
 
       <hr className="rule my-5" />
 
-      <p className="text-center text-[0.625rem] uppercase tracking-label text-smoke">{card.date}</p>
+      <p className="text-center text-[0.625rem] uppercase tracking-label text-smoke-deep">{card.date}</p>
       <h3 className="mt-2 text-center font-display text-sm italic text-harbor/80">{card.heading}</h3>
 
       <ul className="mt-5 space-y-3">
         {card.lines.map((line) => (
           <li key={line.item}>
             <p className="font-display text-[0.9375rem] font-semibold tracking-tight">{line.item}</p>
-            <p className="text-[0.6875rem] uppercase tracking-label text-smoke">{line.vendor}</p>
+            <p className="text-[0.6875rem] uppercase tracking-label text-smoke-deep">{line.vendor}</p>
           </li>
         ))}
       </ul>
@@ -44,7 +44,7 @@ export default function TastingCard() {
             <span key={i} className={on ? 'bg-harbor' : 'bg-transparent'} />
           ))}
         </div>
-        <p className="text-[0.6875rem] uppercase leading-relaxed tracking-label text-smoke">
+        <p className="text-[0.6875rem] uppercase leading-relaxed tracking-label text-smoke-deep">
           {card.qrCaption}
         </p>
       </div>

@@ -5,7 +5,7 @@ import { reviews } from '@/content/site';
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="border-t border-harbor/10 bg-paper py-20 sm:py-28">
+    <section id="reviews" className="bg-paper py-20 sm:py-28">
       <div className="mx-auto max-w-page px-5 sm:px-8">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
@@ -16,10 +16,10 @@ export default function Reviews() {
           </div>
           <div className="sm:text-right">
             <div className="flex items-center gap-3 sm:justify-end">
-              <Stars value={reviews.rating.value} className="text-candle" />
+              <Stars value={reviews.rating.value} className="text-candle-deep" />
               <span className="font-display text-xl font-semibold">{reviews.rating.value}</span>
             </div>
-            <p className="mt-2 text-[0.6875rem] uppercase tracking-label text-smoke">
+            <p className="mt-2 text-[0.6875rem] uppercase tracking-label text-smoke-deep">
               {reviews.rating.count} reviews &middot; {reviews.sources}
             </p>
           </div>

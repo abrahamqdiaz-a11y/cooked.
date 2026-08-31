@@ -4,7 +4,7 @@ import { route } from '@/content/site';
 
 export default function Route() {
   return (
-    <section id="route" className="border-t border-harbor/10 bg-white py-20 sm:py-28">
+    <section id="route" className="bg-mist py-20 sm:py-28">
       <div className="mx-auto max-w-page px-5 sm:px-8">
         <SectionLabel>{route.label}</SectionLabel>
         <h2 className="mt-6 max-w-2xl font-display text-3xl font-semibold leading-[1.1] tracking-tight sm:text-4xl lg:text-[2.75rem]">
@@ -23,7 +23,7 @@ export default function Route() {
                     className="absolute left-[1.375rem] top-12 h-[calc(100%-2.5rem)] w-px bg-harbor/15 sm:left-[1.5rem]"
                   />
                 )}
-                <span className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-harbor/15 bg-paper font-sans text-xs tabular-nums tracking-wide text-sea sm:h-12 sm:w-12">
+                <span className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-harbor/15 bg-white font-sans text-xs tabular-nums tracking-wide text-sea sm:h-12 sm:w-12">
                   {stop.n}
                 </span>
                 <div className="min-w-0 flex-1 pt-1.5">
@@ -31,11 +31,11 @@ export default function Route() {
                     <h3 className="font-display text-xl font-semibold tracking-tight sm:text-2xl">
                       {stop.title}
                     </h3>
-                    <span className="text-[0.6875rem] uppercase tracking-label text-smoke">
+                    <span className="text-[0.6875rem] uppercase tracking-label text-smoke-deep">
                       {stop.meta}
                     </span>
                   </div>
-                  <p className="mt-1 font-display text-[0.9375rem] italic text-candle">
+                  <p className="mt-1 font-display text-[0.9375rem] italic text-candle-deep">
                     {stop.subtitle}
                   </p>
                   <p className="mt-3 max-w-prose text-[0.9375rem] leading-relaxed text-harbor/70">
@@ -47,7 +47,7 @@ export default function Route() {
           </ol>
 
           <div className="lg:col-span-5">
-            <div className="border border-harbor/12 bg-paper p-5 sm:p-7 lg:sticky lg:top-24">
+            <div className="border border-harbor/12 bg-white p-5 sm:p-7 lg:sticky lg:top-24">
               <RouteMap className="mx-auto h-auto w-full max-w-xs lg:max-w-none" />
               <hr className="rule my-5" />
               <p className="text-[0.875rem] leading-relaxed text-harbor/70">{route.note}</p>

@@ -172,8 +172,16 @@ export const pricing = {
   label: 'Pricing',
   headline: 'One tour. Three ways to book it.',
   spec: 'Duration 3 hrs · Replaces lunch · Runs year-round, rain or shine',
+  // Placeholder until the booking system feeds real availability in.
+  availability: 'Departures Tuesday, Thursday and Saturday at 10:00',
   rows: [
-    { name: 'Adults', detail: 'All ten tastings, three market halls, one chef.', price: '€85' },
+    {
+      name: 'Adults',
+      detail: 'All ten tastings, three market halls, one chef.',
+      price: '€85',
+      badge: 'Most popular',
+      highlight: true,
+    },
     { name: 'Children', detail: 'Ages 6–12. Smaller portions, same route.', price: '€55' },
     {
       name: 'Private tour',

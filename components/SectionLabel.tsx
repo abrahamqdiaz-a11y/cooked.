@@ -8,7 +8,7 @@ export default function SectionLabel({
   tone?: 'dark' | 'light';
   className?: string;
 }) {
-  const color = tone === 'light' ? 'text-paper/60' : 'text-smoke';
+  const color = tone === 'light' ? 'text-paper/60' : 'text-smoke-deep';
   const rule = tone === 'light' ? 'bg-paper/30' : 'bg-smoke/40';
 
   return (

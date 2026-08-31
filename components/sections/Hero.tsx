@@ -36,7 +36,7 @@ export default function Hero() {
         </p>
 
         <div className="mt-8 flex flex-col items-stretch gap-3 xs:flex-row xs:items-center sm:mt-10 sm:gap-5">
-          <CTAButton variant="inverse" className="px-7 py-4 text-base">
+          <CTAButton className="px-7 py-4 text-base">
             {hero.primaryCta}
           </CTAButton>
           <a
@@ -53,7 +53,7 @@ export default function Hero() {
         <ul className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-paper/20 pt-5 text-[0.6875rem] uppercase tracking-label text-paper/65 sm:mt-10 sm:text-xs">
           {hero.trustStrip.map((item, i) => (
             <li key={item} className="flex items-center gap-3">
-              {i > 0 && <span aria-hidden className="text-paper/30">&middot;</span>}
+              {i > 0 && <span aria-hidden className="text-paper/60">&middot;</span>}
               {item}
             </li>
           ))}

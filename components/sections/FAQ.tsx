@@ -4,7 +4,7 @@ import { faq, site } from '@/content/site';
 
 export default function FAQ() {
   return (
-    <section id="faq" className="bg-paper py-20 sm:py-28">
+    <section id="faq" className="bg-mist py-20 sm:py-28">
       <div className="mx-auto grid max-w-page gap-10 px-5 sm:px-8 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-4">
           <div className="lg:sticky lg:top-24">

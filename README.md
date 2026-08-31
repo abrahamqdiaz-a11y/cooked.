@@ -46,11 +46,31 @@ properties in `app/globals.css` for the handful of non-Tailwind rules.
 
 | Token | Hex | Used for |
 | --- | --- | --- |
-| `harbor` | `#1E2A30` | Dark surfaces — hero, footer, bands |
-| `paper` | `#FAF9F6` | Page background |
-| `sea` | `#3E6B7A` | Every CTA, price and link |
-| `candle` | `#C49A5C` | Warm accent, used sparingly |
-| `smoke` | `#8A9199` | Section labels, hairline rules, quiet UI |
+| `harbor` | `#1E2A30` | Dark surfaces — hero, small-groups band, footer |
+| `paper` | `#FAF9F6` | Default page ground |
+| `lingonberry` | `#9E463A` | **Conversion only** — booking buttons, prices, the "Most popular" badge, availability dot, tasting numerals |
+| `sea` | `#3E6B7A` | Links, informational UI, secondary actions |
+| `candle` | `#C49A5C` | Warm accent on dark grounds |
+| `candle-wash` | `#F1E5D2` | The gift/perk family only — Fazer band, gift band, recommended price row |
+| `candle-deep` | `#7A5A2D` | The same warmth as text on light grounds |
+| `oatmeal` | `#EFE7DA` | Food-led sections — tastings, vendor statement, tasting-card inset |
+| `mist` | `#DDE8EA` | Informational sections — route, private tours, practical details |
+| `smoke` | `#8A9199` | Hairline rules and dividers |
+| `smoke-deep` | `#63686E` | Label and meta text |
+
+Two rules keep the palette working:
+
+1. **Lingonberry means "book".** It is the only colour used for the conversion
+   path, so nothing else competes with it. Sea blue keeps links and secondary
+   actions.
+2. **`-deep` variants exist for contrast, not decoration.** Base `candle` and
+   `smoke` are below WCAG AA as small text on light grounds; `candle-deep` and
+   `smoke-deep` clear AA on paper and on all three tints. Use the base tokens on
+   dark grounds and for rules, the deep ones for text.
+
+Section grounds alternate so no two adjacent sections share one:
+harbor → paper → mist → oatmeal → harbor → candle-wash → paper → oatmeal →
+paper → mist → candle-wash → mist → paper → harbor.
 
 Type is Fraunces (display) and Inter (body), loaded through `next/font/google`
 so the faces are self-hosted at build time and swap without layout shift.

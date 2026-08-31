@@ -20,7 +20,7 @@ export default function Wordmark({
   }[size];
 
   const color = tone === 'light' ? 'text-paper' : 'text-harbor';
-  const sub = tone === 'light' ? 'text-paper/70' : 'text-smoke';
+  const sub = tone === 'light' ? 'text-paper/70' : 'text-smoke-deep';
 
   return (
     <Tag className={`inline-block leading-none ${color}`}>

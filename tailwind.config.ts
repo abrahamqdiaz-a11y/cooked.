@@ -13,11 +13,31 @@ const config: Config = {
         harbor: '#1E2A30', // dark surface — Helsinki waterfront at dusk
         paper: '#FAF9F6', // warm white background
         sea: {
-          DEFAULT: '#3E6B7A', // primary accent — CTAs, prices, links
+          DEFAULT: '#3E6B7A', // links, informational UI, secondary actions
           deep: '#345A67', // hover/pressed state for sea-filled controls
         },
-        candle: '#C49A5C', // warm accent — sparing
-        smoke: '#8A9199', // muted — labels, rules, quiet UI
+        // The conversion colour. Booking buttons, prices, availability, badges
+        // and the tasting numerals — and deliberately nothing else.
+        lingonberry: {
+          DEFAULT: '#9E463A',
+          deep: '#83382E', // hover/pressed
+        },
+        candle: {
+          DEFAULT: '#C49A5C', // warm accent on dark surfaces
+          wash: '#F1E5D2', // tinted ground for the gift, vendor and pricing bands
+          // The same warmth as text. Two steps darker than a straight #8A6633
+          // so small text clears WCAG AA on the tinted grounds too, not just paper.
+          deep: '#7A5A2D',
+        },
+        // Section grounds that break up a long run of near-white.
+        oatmeal: '#EFE7DA', // food-led sections: tastings, tasting card, reviews
+        mist: '#DDE8EA', // informational sections: route, practical details
+        smoke: {
+          DEFAULT: '#8A9199', // hairline rules and dividers
+          // Label and meta *text*. The base smoke only reaches 3.0:1 on paper
+          // and 2.6:1 on the tints, which fails AA at label sizes.
+          deep: '#60656B',
+        },
       },
       fontFamily: {
         display: ['var(--font-display)', 'Georgia', 'serif'],

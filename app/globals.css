@@ -11,8 +11,15 @@
   --paper: #faf9f6;
   --sea: #3e6b7a;
   --sea-deep: #345a67;
+  --lingonberry: #9e463a;
+  --lingonberry-deep: #83382e;
   --candle: #c49a5c;
+  --candle-wash: #f1e5d2;
+  --candle-deep: #7a5a2d;
+  --oatmeal: #efe7da;
+  --mist: #dde8ea;
   --smoke: #8a9199;
+  --smoke-deep: #60656b;
 
   --rule: rgba(30, 42, 48, 0.14);
   --rule-inverse: rgba(250, 249, 246, 0.18);

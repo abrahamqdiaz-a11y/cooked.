@@ -32,7 +32,7 @@ export default function WhyChefs() {
         <ul className="mt-14 grid gap-px border-t border-harbor/15 sm:mt-16 md:grid-cols-3">
           {whyChefs.columns.map((col, i) => (
             <li key={col.title} className="pt-7 md:px-7 md:first:pl-0 md:last:pr-0">
-              <span className="font-sans text-[0.6875rem] tabular-nums tracking-label text-candle">
+              <span className="font-sans text-[0.6875rem] tabular-nums tracking-label text-candle-deep">
                 {String(i + 1).padStart(2, '0')}
               </span>
               <h3 className="mt-3 font-display text-xl font-semibold tracking-tight">{col.title}</h3>

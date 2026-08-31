@@ -6,7 +6,7 @@ import overhead from '@/assets/images/tasting-overhead.png';
 
 export default function Tastings() {
   return (
-    <section id="tastings" className="bg-paper py-20 sm:py-28">
+    <section id="tastings" className="bg-oatmeal py-20 sm:py-28">
       <div className="mx-auto max-w-page px-5 sm:px-8">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
