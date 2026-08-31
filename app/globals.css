@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Brand tokens, mirrored from tailwind.config.ts so non-Tailwind CSS
+ * (gradients, decorative rules) reads from the same single source.
+ */
+:root {
+  --harbor: #1e2a30;
+  --paper: #faf9f6;
+  --sea: #3e6b7a;
+  --sea-deep: #345a67;
+  --candle: #c49a5c;
+  --smoke: #8a9199;
+
+  --rule: rgba(30, 42, 48, 0.14);
+  --rule-inverse: rgba(250, 249, 246, 0.18);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Sticky header clearance for anchor navigation. */
+    scroll-padding-top: 5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--harbor);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--sea);
+    color: var(--paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--sea);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  /* Restaurant-menu dot leader between an item and its price. */
+  .leader {
+    flex: 1 1 auto;
+    height: 0.75em;
+    margin: 0 0.75rem;
+    border-bottom: 1px dotted var(--smoke);
+    opacity: 0.55;
+  }
+
+  /* Hairline rule used to separate menu rows and set statements apart. */
+  .rule {
+    border: 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .rule-inverse {
+    border: 0;
+    border-top: 1px solid var(--rule-inverse);
+  }
+
+  /* Dark hero/footer surfaces read as one continuous harbour at dusk. */
+  .surface-harbor {
+    background-color: var(--harbor);
+    color: var(--paper);
+  }
+}
