@@ -1,21 +1,20 @@
 import Image from 'next/image';
-import SectionLabel from '../SectionLabel';
 import MenuItem from '../MenuItem';
 import { tastings } from '@/content/site';
 import overhead from '@/assets/images/tasting-overhead.png';
 
 export default function Tastings() {
   return (
-    <section id="tastings" className="bg-oatmeal py-20 sm:py-28">
+    <section id="tastings" className="bg-tomato py-20 text-paper sm:py-32">
       <div className="mx-auto max-w-page px-5 sm:px-8">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
             <div className="lg:sticky lg:top-24">
-              <SectionLabel>{tastings.label}</SectionLabel>
-              <h2 className="mt-6 font-display text-3xl font-semibold leading-[1.1] tracking-tight sm:text-4xl">
+              <p className="eyebrow text-candle">The menu changes. The appetite does not.</p>
+              <h2 className="mt-6 font-display text-5xl font-black uppercase leading-[0.88] tracking-[-0.04em] sm:text-7xl">
                 {tastings.headline}
               </h2>
-              <p className="mt-5 max-w-prose text-[0.9375rem] leading-relaxed text-harbor/70">
+              <p className="mt-6 max-w-prose text-base leading-relaxed text-paper/75">
                 {tastings.standfirst}
               </p>
               <Image
@@ -23,21 +22,21 @@ export default function Tastings() {
                 alt="Overhead view of rye bread, smoked fish and berries on a zinc counter"
                 sizes="(min-width: 1024px) 30vw, 100vw"
                 placeholder="blur"
-                className="mt-8 hidden aspect-square w-full object-cover lg:block"
+                className="mt-10 hidden aspect-[4/5] w-full rotate-1 border-8 border-paper object-cover shadow-2xl lg:block"
               />
             </div>
           </div>
 
           {/* The menu card itself. */}
           <div className="lg:col-span-8">
-            <div className="border border-harbor/12 bg-white px-5 py-2 sm:px-9 sm:py-4">
+            <div className="border-y-2 border-paper/70 px-1 py-2 sm:px-5 sm:py-4 [&_li]:border-paper/20 [&_p]:text-paper/70">
               <ol>
                 {tastings.items.map((item, i) => (
                   <MenuItem key={item.name} index={i + 1} name={item.name} note={item.note} />
                 ))}
               </ol>
             </div>
-            <p className="mt-6 max-w-prose text-[0.9375rem] leading-relaxed text-harbor/70">
+            <p className="mt-6 max-w-prose text-[0.9375rem] leading-relaxed text-paper/70">
               {tastings.footnote}
             </p>
           </div>

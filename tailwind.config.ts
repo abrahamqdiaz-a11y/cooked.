@@ -11,7 +11,9 @@ const config: Config = {
       colors: {
         // "Smoke & Fire", Nordic edition
         harbor: '#1E2A30', // dark surface — Helsinki waterfront at dusk
-        paper: '#FAF9F6', // warm white background
+        paper: '#FFF9ED', // warm menu-paper background
+        butter: '#F2D89C',
+        tomato: '#A13D2D',
         sea: {
           DEFAULT: '#3E6B7A', // links, informational UI, secondary actions
           deep: '#345A67', // hover/pressed state for sea-filled controls
@@ -30,7 +32,7 @@ const config: Config = {
           deep: '#7A5A2D',
         },
         // Section grounds that break up a long run of near-white.
-        oatmeal: '#EFE7DA', // food-led sections: tastings, tasting card, reviews
+        oatmeal: '#EFE7DA', // food-led sections and tasting cards
         mist: '#DDE8EA', // informational sections: route, practical details
         smoke: {
           DEFAULT: '#8A9199', // hairline rules and dividers

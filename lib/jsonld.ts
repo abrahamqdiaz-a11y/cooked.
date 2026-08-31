@@ -1,4 +1,4 @@
-import { site, faq, pricing, reviews, BOOKING_URL } from '@/content/site';
+import { site, faq, pricing, BOOKING_URL } from '@/content/site';
 
 /**
  * Structured data emitted in the document head.
@@ -29,12 +29,6 @@ export const localBusinessLd = {
   geo: { '@type': 'GeoCoordinates', latitude: 60.1786, longitude: 24.9506 },
   areaServed: { '@type': 'City', name: 'Helsinki' },
   sameAs: [site.social.instagram, site.social.tiktok],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: reviews.rating.value,
-    reviewCount: reviews.rating.count,
-    bestRating: 5,
-  },
 };
 
 export const productLd = {
@@ -53,19 +47,6 @@ export const productLd = {
     availability: 'https://schema.org/InStock',
     url: BOOKING_URL,
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: reviews.rating.value,
-    reviewCount: reviews.rating.count,
-    bestRating: 5,
-  },
-  review: reviews.cards.map((r) => ({
-    '@type': 'Review',
-    reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
-    author: { '@type': 'Person', name: r.author },
-    reviewBody: r.quote,
-    publisher: { '@type': 'Organization', name: r.source },
-  })),
 };
 
 export const faqLd = {
