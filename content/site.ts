@@ -284,3 +284,24 @@ export const footer = {
     { label: 'Privacy', href: '/privacy/' },
   ],
 } as const;
+
+/** Mailchimp audience signup. The form posts straight to Mailchimp's hosted endpoint. */
+export const NEWSLETTER_URL =
+  'https://avidaluna.us22.list-manage.com/subscribe/post?u=7887c318e6740cc303be74a3f&id=485dcfa742&f_id=00a1c2e1f0';
+
+export const newsletter = {
+  label: 'Newsletter',
+  headline: 'What the market halls are cooking this season.',
+  body: 'New tour dates, seasonal tastings and the occasional recipe from our chefs. A few emails a year, never more.',
+  fields: {
+    email: 'Email address',
+    firstName: 'First name',
+    lastName: 'Last name',
+    phone: 'Phone number',
+  },
+  required: 'Required',
+  cta: 'Subscribe',
+  note: 'You can unsubscribe at any time from the link in every email.',
+  // Mailchimp's anti-bot honeypot field name for this audience.
+  honeypot: 'b_7887c318e6740cc303be74a3f_485dcfa742',
+} as const;

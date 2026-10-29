@@ -7,6 +7,7 @@ import Pricing from '@/components/sections/Pricing';
 import PrivateTours from '@/components/sections/PrivateTours';
 import GiftCards from '@/components/sections/GiftCards';
 import FAQ from '@/components/sections/FAQ';
+import Newsletter from '@/components/sections/Newsletter';
 import Footer from '@/components/sections/Footer';
 
 export default function Page() {
@@ -28,6 +29,7 @@ export default function Page() {
         <PrivateTours />
         <GiftCards />
         <FAQ />
+        <Newsletter />
       </main>
       <Footer />
     </>
